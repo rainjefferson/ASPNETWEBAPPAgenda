@@ -47,7 +47,7 @@
     <EmptyDataTemplate>
         <table runat="server" style="background-color: #FFFFFF;border-collapse: collapse;border-color: #999999;border-style:none;border-width:1px;">
             <tr>
-                <td>No data was returned.</td>
+                <td>Nenhum dado foi retornado.</td>
             </tr>
         </table>
     </EmptyDataTemplate>
