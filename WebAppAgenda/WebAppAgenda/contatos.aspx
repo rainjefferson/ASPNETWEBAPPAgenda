@@ -2,7 +2,23 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <p> <asp:Label Text="Lista de Contatos" runat="server" Font-Bold="True" Font-Size="Larger" /></p>
+    <p> &nbsp;</p>
+    <p> <asp:Label Text="Cadastro" runat="server" Font-Bold="True" Font-Size="Larger" ID="Label1" /></p>
+    <p>
+        <asp:Label ID="Label2" runat="server" Text="Nome"></asp:Label><br />
+        <asp:TextBox ID="txtNome" runat="server" Width="331px"></asp:TextBox>
+    </p>
+    <p>
+        <asp:Label ID="Label3" runat="server" Text="E-mail"></asp:Label><br />     
+        <asp:TextBox ID="txtEmail" runat="server" Width="330px"></asp:TextBox>
+    </p>
+    <asp:Button ID="btnCadastrar" runat="server" OnClick="btnCadastrar_Click" Text="Cadastrar" />
+    <br />
+    <br />
+    <asp:Label ID="lblErro" runat="server" BorderColor="Red"></asp:Label>
+    <br />
+    <br />
+    <asp:Label Text="Lista de Contatos" runat="server" Font-Bold="True" Font-Size="Larger" />
     <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="Id" DataSourceID="SqlDataSourceContatos" ForeColor="#333333" GridLines="None" Width="16px" Height="16px">
         <AlternatingRowStyle BackColor="White" />
         <Columns>
