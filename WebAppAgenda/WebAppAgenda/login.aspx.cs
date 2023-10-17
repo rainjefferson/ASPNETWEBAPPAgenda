@@ -37,6 +37,10 @@ namespace WebAppAgenda
             SqlDataReader registro = cmd.ExecuteReader();
             if (registro.HasRows)
             {
+                // cookie
+                HttpCookie login = new HttpCookie("login", txtEmail.Text);
+                Response.Cookies.Add(login);
+
                 //direcionar para a pagina principal
                 Response.Redirect("~/index.aspx");
             }
