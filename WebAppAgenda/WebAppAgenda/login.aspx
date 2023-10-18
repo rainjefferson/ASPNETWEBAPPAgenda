@@ -21,6 +21,17 @@
             <br />
             <br />
             <asp:Label ID="lMsg" runat="server" BorderColor="Red" BorderStyle="Solid" Font-Bold="True"></asp:Label>
+            <br />
+            <br />
+            <br />
+            <asp:Panel ID="pnlDataEvento" runat="server" Width="379px" Height="47px">
+                <asp:TextBox ID="txtDataEvento" runat="server" Visible="False"></asp:TextBox>
+                <asp:Label ID="lblDataEvento" runat="server" Text="01/01/2024"></asp:Label>
+                <asp:ImageButton ID="imgbtnEditarEvento" ImageAlign="Right" runat="server" Height="27px" ImageUrl="~/img/editar_16_16.png" 
+                    OnClick="imgbtnEditarEvento_Click" Width="30px" />
+            </asp:Panel>
+            <br />
+            <br />
         </div>
     </form>
 </body>

@@ -49,6 +49,14 @@ namespace WebAppAgenda
                 Response.Write("<script>alert('E-mail ou senha incorretos!');</script>");
                 //lMsg.Text = "email ou senha incorretos!!!";
             }
+        }       
+
+        protected void imgbtnEditarEvento_Click(object sender, ImageClickEventArgs e)
+        {
+            lblDataEvento.Visible = false;
+            //txtDataEvento.Visible = true;
+            pnlDataEvento.Controls.Add(txtDataEvento);
+            txtDataEvento.Visible = true;
         }
     }
 }
