@@ -1,0 +1,45 @@
+﻿body {
+}
+
+header {
+    margin: auto auto;
+    width: 76%;
+    height: 80px;
+    background-color: #B5C753;
+    padding: 4px;
+}
+
+header h1 {
+        color: white;
+        float: left;
+    }
+
+nav {
+    float: right;
+    background-color: #B5C753;
+}
+
+main {
+    margin: 0 auto;
+    width: 75%;
+    background-color: lightgray;
+    padding: 10px;
+}
+
+footer {
+    margin: 0 auto;
+    width: 75%;
+    height: 40px;
+    background-color: #B5C753;
+    padding: 10px;
+}
+
+.alinhamentocentral {
+    width: 50%;
+    align-content: center;
+    background: #6C7A89;
+}
+
+.login {
+    margin: auto auto;
+}

@@ -46,7 +46,8 @@ namespace WebAppAgenda
             }
             else
             {
-                lMsg.Text = "email ou senha incorretos!!!";
+                Response.Write("<script>alert('E-mail ou senha incorretos!');</script>");
+                //lMsg.Text = "email ou senha incorretos!!!";
             }
         }
     }
