@@ -73,6 +73,9 @@
     </Content>
     <Content Include="contatos.aspx" />
     <Content Include="img\Agenda.png" />
+    <Content Include="img\cancelar16_azul.png" />
+    <Content Include="img\confirme16_verde.png" />
+    <Content Include="img\editar16_azul.png" />
     <Content Include="img\editar_16_16.png" />
     <Content Include="index.aspx" />
     <Content Include="login.aspx" />

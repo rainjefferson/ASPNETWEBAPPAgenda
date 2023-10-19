@@ -24,11 +24,14 @@
             <br />
             <br />
             <br />
-            <asp:Panel ID="pnlDataEvento" runat="server" Width="379px" Height="47px">
+            <asp:Panel ID="pnlDataEvento" runat="server" Width="534px" Height="74px">
                 <asp:TextBox ID="txtDataEvento" runat="server" Visible="False"></asp:TextBox>
                 <asp:Label ID="lblDataEvento" runat="server" Text="01/01/2024"></asp:Label>
-                <asp:ImageButton ID="imgbtnEditarEvento" ImageAlign="Right" runat="server" Height="27px" ImageUrl="~/img/editar_16_16.png" 
-                    OnClick="imgbtnEditarEvento_Click" Width="30px" />
+                <asp:ImageButton ID="imgbtnCanEditarEvent" ImageAlign="Right" runat="server" Height="32px" 
+                    ImageUrl="~/img/cancelar16_azul.png" 
+                    OnClick="imgbtnCanEditarEvent_Click" Width="32px" Visible="False" />
+                <asp:ImageButton ID="imgbtnConfirmar" runat="server" Height="32px" ImageAlign="Right" ImageUrl="~/img/confirme16_verde.png" OnClick="imgbtnConfirmar_Click" Visible="False" Width="32px" />
+                <asp:ImageButton ID="imgbtnEditarEvento" runat="server" Height="32px" ImageAlign="Right" ImageUrl="~/img/editar16_azul.png" OnClick="imgbtnEditarEvento_Click" Width="32px" />
             </asp:Panel>
             <br />
             <br />

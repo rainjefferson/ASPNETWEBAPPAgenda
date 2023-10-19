@@ -55,8 +55,28 @@ namespace WebAppAgenda
         {
             lblDataEvento.Visible = false;
             //txtDataEvento.Visible = true;
-            pnlDataEvento.Controls.Add(txtDataEvento);
+            //pnlDataEvento.Controls.Add(txtDataEvento);
             txtDataEvento.Visible = true;
+            imgbtnConfirmar.Visible = true;
+            imgbtnCanEditarEvent.Visible = true;
+            imgbtnEditarEvento.Visible = false;
+        }
+
+        protected void imgbtnCanEditarEvent_Click(object sender, ImageClickEventArgs e)
+        {
+            lblDataEvento.Visible = true;
+            //txtDataEvento.Visible = true;
+            //pnlDataEvento.Controls.Add(txtDataEvento);
+            txtDataEvento.Visible = false;
+            imgbtnConfirmar.Visible = false;
+            imgbtnCanEditarEvent.Visible = false;
+            imgbtnEditarEvento.Visible = true;
+        }
+
+        protected void imgbtnConfirmar_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Write("<script>alert('Gravar nova data de evento!');</script>");
+            //Response.Write("<script>alert('E-mail ou senha incorretos!');</script>");
         }
     }
 }
