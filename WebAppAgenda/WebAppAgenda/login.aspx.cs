@@ -12,7 +12,14 @@ namespace WebAppAgenda
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                Table3.Visible = false;
+                Table2.Visible = false;
+                phDataEvento.Controls.Add(Table3);
+                Table3.Visible = true;
+            }  
+            
         }
 
         protected void btnLogin_Click(object sender, EventArgs e)
@@ -77,6 +84,33 @@ namespace WebAppAgenda
         {
             Response.Write("<script>alert('Gravar nova data de evento!');</script>");
             //Response.Write("<script>alert('E-mail ou senha incorretos!');</script>");
+        }
+
+        protected void imgbtnEditarDtEve_Click(object sender, ImageClickEventArgs e)
+        {
+            
+            phDataEvento.Controls.Clear();
+            Table3.Visible = false;
+            Table2.Visible = false;
+            phDataEvento.Controls.Add(Table2);
+            Table2.Visible = true;
+        }
+
+        
+        protected void imgbtnCancelarDtEve_Click(object sender, ImageClickEventArgs e)
+        {
+
+            phDataEvento.Controls.Clear();
+            Table3.Visible = false;
+            Table2.Visible = false;
+            phDataEvento.Controls.Add(Table3);
+            Table3.Visible = true;
+        }
+
+        protected void imgbtnConfirmarDtEve_Click(object sender, ImageClickEventArgs e)
+        {
+
+            Response.Write("<script>alert('E-mail ou senha incorretos!');</script>");
         }
     }
 }
