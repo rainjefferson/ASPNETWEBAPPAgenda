@@ -17,6 +17,7 @@ header h1 {
 nav {
     float: right;
     background-color: #B5C753;
+    width: 363px;
 }
 
 main {
