@@ -5,6 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <link href="css/bootstrap-4.0.0/dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -15,9 +16,12 @@
             <br />
             <asp:Label ID="Label2" runat="server" Text="Senha"></asp:Label>
             <br />
-            <asp:TextBox ID="txtSenha" runat="server" TextMode="Password" Width="174px"></asp:TextBox>
+            <asp:TextBox ID="txtSenha" runat="server" TextMode="Password" Width="283px"></asp:TextBox>
+            &nbsp;<br />
             <br />
-            <asp:Button ID="btnLogin" runat="server" OnClick="btnLogin_Click" Text="Login" Width="153px" />
+            <asp:Button ID="btnLogin" runat="server" OnClick="btnLogin_Click" Text="Login" Width="153px" CssClass="btn btn-primary" />
+            <br />
+            <br />
             <br />
             <br />
             <asp:Label ID="lMsg" runat="server" BorderColor="Red" BorderStyle="Solid" Font-Bold="True"></asp:Label>
